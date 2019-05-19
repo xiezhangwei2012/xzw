@@ -15,7 +15,7 @@ public class UrlApplicationTests {
 
     @Test
     public void getShort() {
-        urlController.getShort("https://blog.csdn.net/weixin_43700342/article/details/89057471",null);
+        urlController.getShort("https://blog.csdn.net/ityouknow/article/details/90206086",null);
     }
 
     @Test
