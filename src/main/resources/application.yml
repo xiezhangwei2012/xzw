@@ -1,0 +1,19 @@
+mybatis:
+  mapper-locations: classpath:com.example.demo.mapper/*.xml
+  type-aliases-package: com.demo.pojo
+
+#数据库连接池
+jdbc:
+  driver: com.mysql.jdbc.Driver  # com.mysql.jdbc.Driver mysql5 与 mysql 8 驱动不同
+  url: jdbc:mysql://localhost:3306/xzw_test?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull # mysql 8 对时区有要求
+  username: root
+  password: 12345678
+  maxActive: 10
+  maxIdel: 20
+  maxWait: 10
+
+#spring:
+# datasource:
+#  username: writer
+#  password: zhubajie
+#  url: jdbc:mysql://172.20.20.104:3306/zhubajie_crm_workbench?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull driver-class-name: com.mysql.jdbc.Driver
