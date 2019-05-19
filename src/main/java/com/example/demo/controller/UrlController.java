@@ -1,18 +1,21 @@
 package com.example.demo.controller;
 
-import com.example.demo.mapper.TestUrl;
-import com.example.demo.mapper.TestUrlExample;
-import com.example.demo.mapper.TestUrlMapper;
+import com.example.demo.dao.entity.TestUrl;
+import com.example.demo.dao.entity.TestUrlExample;
+import com.example.demo.dao.mapper.TestUrlMapper;
 import com.example.demo.util.MD5;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.annotation.Resource;
 import java.util.List;
 import java.util.Random;
 
+@MapperScan("com.example.demo.dao.mapper")
 @RestController
 @RequestMapping("/urlController")
 public class UrlController {

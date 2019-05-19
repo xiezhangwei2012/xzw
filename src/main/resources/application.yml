@@ -1,6 +1,6 @@
 mybatis:
   mapper-locations: classpath:com.example.demo.mapper/*.xml
-  type-aliases-package: com.demo.pojo
+  type-aliases-package: com.example.demo.mapper
 
 #数据库连接池
 jdbc:
